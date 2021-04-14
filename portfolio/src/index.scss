@@ -1,0 +1,26 @@
+@import '@carbon/themes/scss/themes';
+$carbon--theme: $carbon--theme--g100;
+@include carbon--theme();
+
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+a {
+  color: $text-04;
+}
+
+.bx--side-nav_navigation {
+  background-color: $ui-background;
+}
+
+a.bx--side-nav_link--current,
+a.bx--side-nav_link--current > span.bx--side-nav_link-text {
+  background-color: $ui-01;
+  color: $text-04;
+}
+
+.bx--side-nav_link > .bx--side-nav_link-text,
+  .bx--side-nav_item:not(.bx--side-nav_item--active)
+    > .bx--side-nav_link:hover
+    > span {
+      color: $text-04;
+    }
